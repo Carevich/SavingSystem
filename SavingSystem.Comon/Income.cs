@@ -1,12 +1,12 @@
 ﻿using System;
 using SavingSystem.Comon.Attributes;
-using SavingSystem.Models;
 
 namespace SavingSystem.Comon
 {
     [TableName("Incomes")]
     public class Income
     {
+        [ColumnName("Id")]
         public int Id { get; set; }
         [ColumnName("ProfileId")]
         public int ProfileId { get; set; }

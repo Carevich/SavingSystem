@@ -30,9 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DbExtensions">
+      <HintPath>..\packages\DbExtensions.5.0.0\lib\net40\DbExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,14 +58,13 @@
       <Project>{afb70ae1-fee7-4117-b436-27890ac19223}</Project>
       <Name>SavingSystem.Comon</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SavingSystem.CustomDAL\SavingSystem.CustomDAL.csproj">
-      <Project>{d71b3d9c-4897-430c-a44e-af62da90d14a}</Project>
-      <Name>SavingSystem.CustomDAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SavingSystem.QueryBuilder\SavingSystem.QueryBuilder.csproj">
       <Project>{801cd075-9619-4ee9-b15f-9a90cd51f383}</Project>
       <Name>SavingSystem.QueryBuilder</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,33 +8,31 @@ using SavingSystem.BaseRepository.Interfaces;
 using SavingSystem.Comon.Attributes;
 using SavingSystem.QueryBuilder;
 
-
 namespace SavingSystem.MsSQLRepository
 {
     public abstract class BaseRepository<T> : IRepository<T> where T : class, new()
     {
-        private readonly string _cnStr;
+        protected readonly string CnStr;
         protected QueryManager QueryManager;
 
         protected BaseRepository(string cnString = "SavSysEntities")
         {
-            _cnStr = ConfigurationManager.ConnectionStrings[cnString].ConnectionString;
+            CnStr = ConfigurationManager.ConnectionStrings[cnString].ConnectionString;
             QueryManager = new QueryManager();
         }
 
-        
-        public IEnumerable<T> GetAll()
+
+        public virtual IEnumerable<T> GetAll()
         {
             IList<T> items;
-            var type = new T();
-            IList<PropertyInfo> properties = type.GetType().GetProperties();
-            var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));
+            IList<PropertyInfo> properties = typeof(T).GetProperties();
+            var tableName = typeof(T).GetCustomAttribute<TableNameAttribute>().Name;
             if (tableName == null) { throw new NullReferenceException("Table name attribute of type cannot be empty or null."); }
             List<string> columnsStrings = GetColumnsStringsOnAttributesProperties(properties);
 
-            using (var connection = new SqlConnection(_cnStr))
+            using (var connection = new SqlConnection(CnStr))
             {
-                var query = QueryManager.GenerateSelectAllQuery(tableName.Name, columnsStrings);
+                var query = QueryManager.GenerateSelectAllQuery(tableName, columnsStrings);
                 using (var command = new SqlCommand(query, connection))
                 {
                     connection.Open();
@@ -47,8 +45,7 @@ namespace SavingSystem.MsSQLRepository
             return items;
         }
 
-
-        public IEnumerable<T> GetAll(int profileId)
+        public virtual IEnumerable<T> GetAll(int profileId)
         {
             IList<T> items;
             var type = new T();
@@ -57,7 +54,7 @@ namespace SavingSystem.MsSQLRepository
             if (tableName == null) { throw new NullReferenceException("Table name attribute of type cannot be empty or null."); }
             List<string> columnsStrings = GetColumnsStringsOnAttributesProperties(properties);
 
-            using (var connection = new SqlConnection(_cnStr))
+            using (var connection = new SqlConnection(CnStr))
             {
                 var query = QueryManager.GenerateSelectAllQuery(tableName.Name, columnsStrings, profileId);
                 using (var command = new SqlCommand(query, connection))
@@ -72,8 +69,7 @@ namespace SavingSystem.MsSQLRepository
             return items;
         }
 
-
-        public T Get(int profileId, int fieldId)
+        public virtual T Get(int profileId, int fieldId)
         {
             IList<T> items;
             var type = new T();
@@ -82,7 +78,7 @@ namespace SavingSystem.MsSQLRepository
             if (tableName == null) { throw new NullReferenceException("Table name attribute of type cannot be empty or null."); }
             List<string> columnsStrings = GetColumnsStringsOnAttributesProperties(properties);
 
-            using (var connection = new SqlConnection(_cnStr))
+            using (var connection = new SqlConnection(CnStr))
             {
                 var query = QueryManager.GenerateSelectOneFild(tableName.Name, columnsStrings, profileId, fieldId);
                 using (var command = new SqlCommand(query, connection))
@@ -92,13 +88,13 @@ namespace SavingSystem.MsSQLRepository
                     IList<string> columns = GetColumnsTable(reader);
                     items = ReadData<T>(reader, columns, properties);
                     connection.Close();
+                    //reader.Close();
                 }
             }
             return items.First();
         }
-
-
-        public bool Add(int profileId, T type)
+        
+        public virtual bool Add(int profileId, T type)
         {
             IList<PropertyInfo> properties = type.GetType().GetProperties();
             var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));
@@ -106,7 +102,7 @@ namespace SavingSystem.MsSQLRepository
             List<string> columnsStrings = GetColumnsStringsOnAttributesProperties(properties);
             var columnAttribures = GetAttributesInProperties(properties);
 
-            using (var connection = new SqlConnection(_cnStr))
+            using (var connection = new SqlConnection(CnStr))
             {
                 var query = QueryManager.GenerateInsertQuery(tableName.Name, columnsStrings);
                 var command = new SqlCommand(query, connection);
@@ -129,9 +125,8 @@ namespace SavingSystem.MsSQLRepository
             }
             return true;
         }
-
-
-        public bool Update(int fieldId, T type)
+        
+        public virtual bool Update(int fieldId, T type)
         {
             IList<PropertyInfo> properties = type.GetType().GetProperties();
             var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));
@@ -139,7 +134,7 @@ namespace SavingSystem.MsSQLRepository
             List<string> columnsStrings = GetColumnsStringsOnAttributesProperties(properties);
             var columnAttribures = GetAttributesInProperties(properties);
 
-            using (var connection = new SqlConnection(_cnStr))
+            using (var connection = new SqlConnection(CnStr))
             {
                 var query = QueryManager.GenerateUpdateQuery(tableName.Name, columnsStrings, fieldId);
                 var command = new SqlCommand(query, connection);
@@ -162,14 +157,13 @@ namespace SavingSystem.MsSQLRepository
             }
             return true;
         }
-
         
-        public bool Delete(int fieldId, T type)
+        public virtual bool Delete(int fieldId, T type)
         {
             var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));
             if (tableName == null) { throw new NullReferenceException("Table name attribute of type cannot be empty or null."); }
             
-            using (var connection = new SqlConnection(_cnStr))
+            using (var connection = new SqlConnection(CnStr))
             {
                 var query = QueryManager.GenerateDeleteQuery(tableName.Name, fieldId);
                 var command = new SqlCommand(query, connection);

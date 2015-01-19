@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using SavingSystem.Comon;
 using SavingSystem.Comon.Mapping_Model;
 
 namespace SavingSystem.BaseRepository.Interfaces
@@ -29,8 +30,7 @@ namespace SavingSystem.BaseRepository.Interfaces
         /// Get all incomes by category.
         /// </summary>
         /// <param name="profileId">Profile id.</param>
-        /// <param name="incomeCategoryId">Income category id.</param>
         /// <returns>All incomes by one category</returns>
-        IEnumerable<IncomeModel> GetByCategory(int profileId, int incomeCategoryId);
+        IEnumerable<IncomeModel> GetByCategory(int profileId);
     }
 }

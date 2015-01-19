@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
@@ -158,5 +159,6 @@ namespace SavingSystem.QueryBuilder
 
             return sb.ToString();
         }
+
     }
 }

@@ -5,6 +5,12 @@ namespace SavingSystem.BaseRepository.Interfaces
     public interface IRepository<T> where T : class
     {
         /// <summary>
+        /// Get all items table. Only Admin.
+        /// </summary>
+        /// <returns>All itms table.</returns>
+        IEnumerable<T> GetAll();
+
+        /// <summary>
         /// Get all items Profile.
         /// </summary>
         /// <param name="profileId">Profile id.</param>
