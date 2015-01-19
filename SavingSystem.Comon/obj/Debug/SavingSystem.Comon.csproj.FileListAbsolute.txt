@@ -3,3 +3,8 @@ F:\Development\Projects\SavingSystem\SavingSystem.Comon\bin\Debug\SavingSystem.C
 F:\Development\Projects\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.dll
 F:\Development\Projects\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.pdb
 F:\Development\Projects\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.csprojResolveAssemblyReference.cache
+F:\Development\Git\SavingSystem\SavingSystem.Comon\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Git\SavingSystem\SavingSystem.Comon\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Git\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.csprojResolveAssemblyReference.cache
+F:\Development\Git\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.dll
+F:\Development\Git\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.pdb

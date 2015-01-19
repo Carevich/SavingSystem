@@ -5,3 +5,10 @@ F:\Development\Projects\SavingSystem\SavingSystem.BaseRepository\bin\Debug\Savin
 F:\Development\Projects\SavingSystem\SavingSystem.BaseRepository\bin\Debug\SavingSystem.Comon.pdb
 F:\Development\Projects\SavingSystem\SavingSystem.BaseRepository\obj\Debug\SavingSystem.BaseRepository.dll
 F:\Development\Projects\SavingSystem\SavingSystem.BaseRepository\obj\Debug\SavingSystem.BaseRepository.pdb
+F:\Development\Git\SavingSystem\SavingSystem.BaseRepository\bin\Debug\SavingSystem.BaseRepository.dll
+F:\Development\Git\SavingSystem\SavingSystem.BaseRepository\bin\Debug\SavingSystem.BaseRepository.pdb
+F:\Development\Git\SavingSystem\SavingSystem.BaseRepository\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Git\SavingSystem\SavingSystem.BaseRepository\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Git\SavingSystem\SavingSystem.BaseRepository\obj\Debug\SavingSystem.BaseRepository.csprojResolveAssemblyReference.cache
+F:\Development\Git\SavingSystem\SavingSystem.BaseRepository\obj\Debug\SavingSystem.BaseRepository.dll
+F:\Development\Git\SavingSystem\SavingSystem.BaseRepository\obj\Debug\SavingSystem.BaseRepository.pdb

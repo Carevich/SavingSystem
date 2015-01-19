@@ -5,3 +5,10 @@ F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingS
 F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.Comon.pdb
 F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.dll
 F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.pdb
+F:\Development\Git\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.QueryBuilder.dll
+F:\Development\Git\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.QueryBuilder.pdb
+F:\Development\Git\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Git\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Git\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.csprojResolveAssemblyReference.cache
+F:\Development\Git\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.dll
+F:\Development\Git\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.pdb

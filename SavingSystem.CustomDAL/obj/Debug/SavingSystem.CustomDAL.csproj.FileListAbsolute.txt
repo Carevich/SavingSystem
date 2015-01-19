@@ -5,3 +5,10 @@ F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSyst
 F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.Comon.pdb
 F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.dll
 F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.pdb
+F:\Development\Git\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.CustomDAL.dll
+F:\Development\Git\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.CustomDAL.pdb
+F:\Development\Git\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Git\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Git\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.csprojResolveAssemblyReference.cache
+F:\Development\Git\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.dll
+F:\Development\Git\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.pdb
