@@ -1,0 +1,7 @@
+F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.csprojResolveAssemblyReference.cache
+F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.QueryBuilder.dll
+F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.QueryBuilder.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.dll
+F:\Development\Projects\SavingSystem\SavingSystem.QueryBuilder\obj\Debug\SavingSystem.QueryBuilder.pdb

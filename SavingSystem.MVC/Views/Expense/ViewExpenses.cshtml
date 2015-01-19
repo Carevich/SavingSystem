@@ -1,0 +1,26 @@
+﻿@model IEnumerable<SavingSystem.Models.Expense>
+@{
+    ViewBag.Title = "View Expense";
+}
+<div>
+    <table>
+        <tr>
+            <th>Summ</th>
+            <th>Category</th>
+            <th>Date Creation</th>
+            <th>Comment</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Summ</td>
+                @if (item.ExpenseCategory == null)
+                { <td></td> }
+                else
+                { <td>@item.ExpenseCategory.Title</td> }
+                <td>@item.DateCreation</td>
+                <td>@item.Comment</td>
+            </tr>
+        }
+    </table>
+</div>

@@ -1,0 +1,13 @@
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\obj\Debug\SavingSystem.MsSQLRepository.csprojResolveAssemblyReference.cache
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.MsSQLRepository.dll
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.MsSQLRepository.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.BaseRepository.dll
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.CustomDAL.dll
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.QueryBuilder.dll
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.BaseRepository.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.CustomDAL.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\bin\Debug\SavingSystem.QueryBuilder.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\obj\Debug\SavingSystem.MsSQLRepository.dll
+F:\Development\Projects\SavingSystem\SavingSystem.MsSQLRepository\obj\Debug\SavingSystem.MsSQLRepository.pdb

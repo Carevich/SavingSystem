@@ -1,0 +1,5 @@
+F:\Development\Projects\SavingSystem\SavingSystem.Comon\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Projects\SavingSystem\SavingSystem.Comon\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.dll
+F:\Development\Projects\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.Comon\obj\Debug\SavingSystem.Comon.csprojResolveAssemblyReference.cache

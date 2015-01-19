@@ -1,0 +1,7 @@
+F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.csprojResolveAssemblyReference.cache
+F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.CustomDAL.dll
+F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.CustomDAL.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.Comon.dll
+F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\bin\Debug\SavingSystem.Comon.pdb
+F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.dll
+F:\Development\Projects\SavingSystem\SavingSystem.CustomDAL\obj\Debug\SavingSystem.CustomDAL.pdb

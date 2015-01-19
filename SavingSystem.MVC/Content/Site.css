@@ -1,0 +1,700 @@
+﻿/** Website template by freewebsitetemplates.com **/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    color: #fff;
+    text-align: justify;
+    background-image: url(./images/bg-body.gif);
+}
+
+#background {
+    background-image: url(./images/bg-page-top-curve.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#page {
+    width: 950px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+    #page .header {
+        padding: 78px 0 0 0;
+        margin-left: -1px;
+    }
+
+        #page .header .footer {
+            background-image: url(./images/bg-page-bottom-curve.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            padding: 0 0 5px 0;
+            margin-right: 1px;
+        }
+
+            #page .header .footer .body {
+                background-image: url(./images/bg-page.jpg);
+                width: 950px;
+                overflow: hidden;
+            }
+
+
+    #page .shadow {
+        background-image: url(./images/bottom-shadow.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 35px;
+    }
+
+
+
+
+    /** Start of Sidebar style **/
+    #page .header .footer .body #sidebar {
+        width: 211px;
+        float: left;
+    }
+
+        #page .header .footer .body #sidebar img#logo {
+            border: 0;
+            /*margin: 20px 0 20px 20px;*/
+            margin: 20px 0 20px 25px;
+        }
+
+
+        /** start style navitagion style**/
+
+        #page .header .footer .body #sidebar ul.navigation {
+            margin: 0 0 50px 8px;
+            padding: 5px 0 0 0;
+            list-style-type: none;
+            background-image: url(./images/border-dashed.gif);
+            background-repeat: repeat-x;
+            background-position: top;
+            position: relative;
+            width: 200px;
+            z-index: 9990;
+        }
+
+
+            #page .header .footer .body #sidebar ul.navigation li {
+                width: 200px;
+                height: 40px;
+                position: relative;
+                line-height: 40px;
+                background-image: url(./images/menu-separator.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 35px;
+            }
+
+                #page .header .footer .body #sidebar ul.navigation li.last {
+                    background-image: url(./images/border-dashed.gif);
+                    background-repeat: repeat-x;
+                    background-position: bottom;
+                }
+
+                #page .header .footer .body #sidebar ul.navigation li a {
+                    width: 214px;
+                    height: 40px;
+                    height: 40px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: -5px;
+                    text-align: center;
+                    padding-right: 10px;
+                    color: #999999;
+                    text-decoration: none;
+                }
+
+                    #page .header .footer .body #sidebar ul.navigation li a:hover {
+                        width: 214px;
+                        height: 40px;
+                        height: 40px;
+                        display: block;
+                        position: absolute;
+                        color: #669933;
+                        background: url(./images/sprite.gif);
+                        background-repeat: no-repeat;
+                        background-position: 200px -228px;
+                        text-shadow: #ffffff 2px 0 1px;
+                    }
+
+                #page .header .footer .body #sidebar ul.navigation li.active a {
+                    width: 214px;
+                    height: 40px;
+                    height: 40px;
+                    display: block;
+                    position: absolute;
+                    color: #669933;
+                    background: url(./images/sprite.gif);
+                    background-repeat: no-repeat;
+                    background-position: 200px -228px;
+                    text-shadow: #ffffff 2px 0 1px;
+                }
+
+
+
+
+
+
+        #page .header .footer .body #sidebar .connect {
+            background-image: url(./images/bg-social-sites.jpg);
+            background-repeat: no-repeat;
+            height: 49px;
+            width: 186px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+            #page .header .footer .body #sidebar .connect a {
+                display: block;
+                float: left;
+                text-decoration: none;
+                margin: 10px 10px 0 20px;
+            }
+
+                #page .header .footer .body #sidebar .connect a.facebook {
+                    background-image: url(./images/sprite.gif);
+                    background-repeat: no-repeat;
+                    background-position: 0 0;
+                    width: 25px;
+                    height: 26px;
+                    margin-left: 20px;
+                }
+
+                #page .header .footer .body #sidebar .connect a.twitter {
+                    background-image: url(./images/sprite.gif);
+                    background-repeat: no-repeat;
+                    background-position: 0 -76px;
+                    width: 37px;
+                    height: 26px;
+                }
+
+                #page .header .footer .body #sidebar .connect a.vimeo {
+                    background-image: url(./images/sprite.gif);
+                    background-repeat: no-repeat;
+                    background-position: 0 -152px;
+                    width: 32px;
+                    height: 26px;
+                }
+
+
+
+        #page .header .footer .body #sidebar .footenote {
+            width: 186px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+            #page .header .footer .body #sidebar .footenote span {
+                color: #cccccc;
+                display: block;
+                font-size: 10px;
+                text-align: center;
+            }
+
+                #page .header .footer .body #sidebar .footenote span a {
+                    color: #cccccc;
+                    text-decoration: none;
+                }
+
+                    #page .header .footer .body #sidebar .footenote span a:hover {
+                        color: #999999;
+                    }
+
+    /** end of Sidebar style **/
+
+
+    /** Start of Content Style **/
+
+    #page .header .footer .body #content {
+        width: 739px;
+        float: left;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+
+        #page .header .footer .body #content .content img {
+            border: 0;
+        }
+
+        #page .header .footer .body #content .content {
+            width: 726px;
+            background-image: url(./images/bg-inner-page.jpg);
+            background-repeat: repeat-y;
+            float: left;
+            padding-top: 20px;
+            overflow: hidden;
+        }
+
+
+            #page .header .footer .body #content .content ul li {
+                list-style-type: none;
+                padding-right: 40px;
+            }
+
+                #page .header .footer .body #content .content ul li span {
+                    display: block;
+                    font-style: Italic;
+                }
+
+                #page .header .footer .body #content .content ul li a {
+                    text-decoration: none;
+                }
+
+                    #page .header .footer .body #content .content ul li a:hover {
+                        color: #cccccc;
+                    }
+
+                    #page .header .footer .body #content .content ul li a span {
+                        display: block;
+                        color: #ffffff;
+                        margin-top: 20px;
+                        font-style: Italic;
+                    }
+
+                #page .header .footer .body #content .content ul li h2 a {
+                    font-family: Helvetica;
+                    font-size: 14px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                #page .header .footer .body #content .content ul li p {
+                    font-family: Helvetica;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+
+                    #page .header .footer .body #content .content ul li p a {
+                        font-family: Helvetica;
+                        font-size: 14px;
+                        color: #ffffff;
+                        text-decoration: underline;
+                    }
+
+                        #page .header .footer .body #content .content ul li p a:hover {
+                            font-family: Helvetica;
+                            font-size: 14px;
+                            color: #cccccc;
+                        }
+
+            /** Style Blog page**/
+            #page .header .footer .body #content .content ul.article li {
+                list-style-type: none;
+                padding-right: 40px;
+                display: block;
+                margin-bottom: 30px;
+                overflow: hidden;
+            }
+
+
+                #page .header .footer .body #content .content ul.article li img {
+                    float: left;
+                    margin: 0 20px 0 0;
+                }
+
+                #page .header .footer .body #content .content ul.article li h2 {
+                    margin: 0;
+                }
+
+                    #page .header .footer .body #content .content ul.article li h2 a {
+                        font-family: Helvetica;
+                        font-size: 18px;
+                        font-style: Italic;
+                        color: #ffffff;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+
+                        #page .header .footer .body #content .content ul.article li h2 a:hover {
+                            font-family: Helvetica;
+                            font-size: 18px;
+                            font-style: Italic;
+                            color: #cccccc;
+                            text-decoration: none;
+                            font-weight: bold;
+                        }
+
+                #page .header .footer .body #content .content ul.article li a {
+                    font-family: Helvetica;
+                    font-size: 14px;
+                    font-style: Italic;
+                    color: #ffffff;
+                    text-decoration: none;
+                    margin-top: 20px;
+                }
+
+
+                    #page .header .footer .body #content .content ul.article li a:hover {
+                        font-family: Helvetica;
+                        font-size: 14px;
+                        color: #cccccc;
+                    }
+
+                #page .header .footer .body #content .content ul.article li p {
+                    margin-top: 0;
+                }
+
+                #page .header .footer .body #content .content ul.article li p {
+                    font-family: Helvetica;
+                    font-size: 14px;
+                    color: #ffffff;
+                    line-height: 20px;
+                }
+
+                    #page .header .footer .body #content .content ul.article li p a {
+                        font-family: Helvetica;
+                        font-size: 14px;
+                        color: #ffffff;
+                        text-decoration: underline;
+                    }
+
+                        #page .header .footer .body #content .content ul.article li p a:hover {
+                            font-family: Helvetica;
+                            font-size: 14px;
+                            color: #cccccc;
+                        }
+
+        /** End Style Blog Page**/
+
+
+
+        /**----------------- Start Freatured Style  --------------------**/
+        #page .header .footer .body #content .featured {
+            width: 294px;
+            position: relative;
+            z-index: 20;
+            margin: -473px 0 25px 432px;
+            overflow: hidden;
+            display: block;
+        }
+
+
+            #page .header .footer .body #content .featured .body {
+                background-image: url(./images/bg-slogan.jpg);
+                background-repeat: no-repeat;
+                width: 272px;
+                position: relative;
+                z-index: 40;
+                top: -90px;
+                height: 260px;
+                margin: 0 10px;
+            }
+
+                #page .header .footer .body #content .featured .body p {
+                    padding: 0 20px 0 20px;
+                    margin-left: 0;
+                }
+
+                    #page .header .footer .body #content .featured .body p a {
+                        color: #ffffff;
+                    }
+
+                        #page .header .footer .body #content .featured .body p a:hover {
+                            color: #cccccc;
+                        }
+
+
+            #page .header .footer .body #content .featured .header {
+                background-image: url(./images/bg-heading.jpg);
+                background-repeat: no-repeat;
+                width: 294px;
+                height: 90px;
+            }
+
+                #page .header .footer .body #content .featured .header ul {
+                    position: relative;
+                    top: -70px;
+                    left: 0;
+                    width: 294px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                    #page .header .footer .body #content .featured .header ul li {
+                        list-style-type: none;
+                        float: left;
+                        line-height: 15px;
+                        padding: 0 10px;
+                    }
+
+                        #page .header .footer .body #content .featured .header ul li p {
+                            color: #999999;
+                            font-family: Arial;
+                            font-size: 12px;
+                            margin-top: 0;
+                            height: 70px;
+                        }
+
+                        #page .header .footer .body #content .featured .header ul li.first {
+                            width: 70px;
+                            height: 90px;
+                            float: left;
+                            text-align: center;
+                            padding-top: 10px;
+                        }
+
+                            #page .header .footer .body #content .featured .header ul li.first p {
+                                color: #ffffff;
+                                font-family: Arial;
+                                font-size: 48px;
+                                margin-top: 10px;
+                                text-align: center;
+                            }
+
+                        #page .header .footer .body #content .featured .header ul li.last {
+                            width: 180px;
+                            height: 90px;
+                            float: left;
+                        }
+
+                            #page .header .footer .body #content .featured .header ul li.last a {
+                                color: #999999;
+                            }
+
+                                #page .header .footer .body #content .featured .header ul li.last a:hover {
+                                    color: #ffffff;
+                                }
+
+
+/**----------------- Start Freatured Style  --------------------**/
+
+/** end of Content Style **/
+
+
+/* Define the body style */
+/*body {
+    font-family: Helvetica;
+    font-size: 12px;
+}*/
+
+/* We remove the margin, padding, and list style of UL and LI components */
+#menuwrapper ul, #menuwrapper ul li {
+    margin: 0;
+    padding: 0;
+    /*list-style: none;*/
+    margin-left: 0.5px;
+    list-style-type: none;
+}
+
+    /* We apply background color and border bottom white and width to 150px */
+    #menuwrapper ul li {
+        text-align: center;
+        /*background-color: #7f95db;*/
+        background-color: #999999;
+        border-bottom: solid 1px white;
+        width: 210px;
+        cursor: pointer;
+    }
+
+        /* We apply the background hover color when user hover the mouse over of the li component */
+        #menuwrapper ul li:hover {
+            /*background-color: #6679e9;*/
+            background-color: #00bfff;
+            position: relative;
+        }
+
+        /* We apply the link style */
+        #menuwrapper ul li a {
+            padding: 5px 15px;
+            color: #ffffff;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        /**** SECOND LEVEL MENU ****/
+        /* We make the position to absolute for flyout menu and hidden the ul until the user hover the parent li item */
+        #menuwrapper ul li ul {
+            position: absolute;
+            display: none;
+        }
+
+        /* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
+        #menuwrapper ul li:hover ul {
+            left: 210px;
+            top: 0;
+            display: block;
+        }
+
+        /* we apply different background color to 2nd level menu items*/
+        #menuwrapper ul li ul li {
+            background-color: #cae25a;
+            width: 130px;
+        }
+
+        /* We change the background color for the level 2 submenu when hovering the menu */
+        #menuwrapper ul li:hover ul li:hover {
+            background-color: #b1b536;
+        }
+
+        /* We style the color of level 2 links */
+        #menuwrapper ul li ul li a {
+            color: #454444;
+            display: inline-block;
+            /*width: 120px;*/
+        }
+
+        /**** THIRD LEVEL MENU ****/
+        /* We need to hide the 3rd menu, when hovering the first level menu */
+        #menuwrapper ul li:hover ul li ul {
+            position: absolute;
+            display: none;
+        }
+
+        /* We show the third level menu only when they hover the second level menu parent */
+        #menuwrapper ul li:hover ul li:hover ul {
+            display: block;
+            left: 130px;
+            top: 0;
+        }
+
+            /* We change the background color for the level 3 submenu*/
+            #menuwrapper ul li:hover ul li:hover ul li {
+                background: #86d3fa;
+            }
+
+                /* We change the background color for the level 3 submenu when hovering the menu */
+
+                #menuwrapper ul li:hover ul li:hover ul li:hover {
+                    background: #358ebc;
+                }
+
+                /* We change the level 3 link color */
+                #menuwrapper ul li:hover ul li:hover ul li a {
+                    color: #ffffff;
+                }
+
+/* Clear float */
+.clear {
+    clear: both;
+}
+
+
+/*================= Action =================*/
+
+.render {
+    background-image: url(./images/oduvanchik.jpg);
+    background-size: 726px 546px;
+    background-repeat: no-repeat;
+    width: 726px;
+    height: 546px;
+    margin-left: 212px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    /*border: 1px solid #e80c4d;*/
+    color: #e80c4d;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/*================= Must Authorize =================*/
+#mustAuthorize {
+    text-align: center;
+    margin: 0;
+}
+
+    #mustAuthorize p {
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 20px;
+        color: darkgreen;
+    }
+
+    #mustAuthorize img {
+        border-radius: 10px;
+        margin: 256px 400px 0px 20px;
+    }
+
+
+/*================= Register Form position =================*/
+.registerForm {
+    margin-left: 260px;
+    margin-top: 15px;
+}
+
+    .registerForm p {
+        color: darkgreen;
+        margin-bottom: 0;
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+
+        .registerForm p input {
+            margin-top: 5px;
+            margin-left: -2px;
+        }
+
+    .registerForm label.error {
+        color: #e80c4d;
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+#submitButtonRegister {
+    margin-left: -4px;
+}
+
+/*================= Log On Form =================*/
+
+.login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+    .login a {
+        text-decoration: none;
+        color: #358ebc;
+        margin-top: 5px;
+    }
+
+#registerLink {
+    margin-right: -87px;
+    margin-top: -39px;
+}
+
+#logOnError {
+    /*text-align: center;*/
+    color: #e80c4d;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#submitButtonLogOn {
+    margin-left: -125px;
+}

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/AnotherCSS/m-buttons.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/AnotherCSS/m-forms.css")" rel="stylesheet" type="text/css"/>
+    <script src="@Url.Content("~/Scripts/jquery-2.1.1.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="background">
+        <div id="page">
+
+            <div class="header">
+                <div class="footer">
+                    <div class="body">
+
+                        <div id="sidebar">
+                            <a href="index.html">
+                                <img id="logo" src="@Url.Content("~/Content/images/logo.jpg")" with="154" height="74" alt="" title="" /></a>
+
+                            <div id="menuwrapper">
+                                <ul>
+                                    <li><a href="/Home/Index">ГЛАВНАЯ</a></li>
+                                    <li><a href="#">УПРАВЛЕНИЕ</a>
+                                        <ul>
+                                            <li><a href="/Expense/ViewExpenses">Доходы</a></li>
+                                            <li><a href="#">Расходы</a></li>
+                                            <li><a href="#">Долги</a></li>
+                                            <li><a href="#">Займы</a></li>
+                                            <li><a href="#">Категории</a>
+                                                <ul>
+                                                    <li><a href="#">Доходов</a></li>
+                                                    <li><a href="#">Расходов</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">БАЛАНС</a></li>
+                                    <li><a href="#">КАК ПОЛЬЗОВАТЬСЯ</a>
+                                    <li><a href="#">О НАС</a>
+                                        <ul>
+                                            <li><a href="#">Вопросы</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                            <li><a href="#">Кто мы</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                               @* @Html.Partial("LogOnForm")*@
+                            </div>
+
+                            <div class="connect">
+                                <a href="#" class="facebook">&nbsp;</a>
+                                <a href="#" class="twitter">&nbsp;</a>
+                                <a href="#" class="vimeo">&nbsp;</a>
+                            </div>
+
+                            <div class="footenote">
+                                <span>&copy; Copyright &copy; 2014</span>
+                                <span><a href="#">Система сбережений | Saving System</a></span>
+                                <span>все права защищены</span>
+                            </div>
+
+                        </div>
+                        <div class="render">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

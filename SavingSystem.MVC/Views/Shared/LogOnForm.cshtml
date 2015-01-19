@@ -1,0 +1,51 @@
+﻿@using SavingSystem.MVC.Domain
+
+<script>
+    $(function () {
+        $('#isLoginTrue').hide();
+        $('#submitButtonLogOn').click(function () {
+            $.ajax({
+                url: '@Url.Action("LogOn", "Account")',
+                data: { email: $('#Email').val(), password: $('#Password').val() },
+                success: function () {
+                    $('#isLoginFalse').hide();
+                    $('#isLoginTrue').show();
+                },
+                dataType: 'json',
+                error: function () {
+                    //alert('Не верный логин или пароль');
+                    $('#logOnError').html('Не верный логин или пароль');
+                }
+            });
+        });
+    });
+</script>
+
+<div class="login">
+
+    <div id="isLoginTrue">
+        <p><a href="#">Мой профиль</a></p>
+        <p><a href="@Url.Action("LogOut", "Account")">Выйти</a></p>
+    </div>
+
+    @if (SavSysAuthentication.IsLogin())
+    {
+        <div id="isLoginTrue">
+            <p><a href="#">Мой профиль</a></p>
+            <p><a href="@Url.Action("LogOut", "Account")">Выйти</a></p>
+        </div>
+    }
+    else
+    {
+        <div id="isLoginFalse">
+            <p id="logOnError"></p>
+            <input id="Email" class="m-wrap m-ctrl-small" type="text" name="Email" value="" placeholder="Login (Email)"><br>
+            <input id="Password" class="m-wrap m-ctrl-small" type="password" name="Password" value="" placeholder="Password"><br>
+            <a id="submitButtonLogOn" class="m-btn black">Вход</a>
+            <p id="registerLink"><a href="@Url.Action("Register", "Account")" class="m-btn black">Регистрация</a></p>
+        </div>
+    }
+
+</div>
+
+@*<input id="submitButtonLogOn" type="submit" value="Вход" />*@
