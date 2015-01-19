@@ -2,6 +2,5 @@ F:\Development\Git\SavingSystem\SavingSystem.MsSQLRepositoryTests\bin\Debug\Savi
 F:\Development\Git\SavingSystem\SavingSystem.MsSQLRepositoryTests\bin\Debug\SavingSystem.MsSQLRepositoryTests.pdb
 F:\Development\Git\SavingSystem\SavingSystem.MsSQLRepositoryTests\bin\Debug\nunit.framework.dll
 F:\Development\Git\SavingSystem\SavingSystem.MsSQLRepositoryTests\bin\Debug\nunit.framework.xml
-F:\Development\Git\SavingSystem\SavingSystem.MsSQLRepositoryTests\obj\Debug\SavingSystem.MsSQLRepositoryTests.csprojResolveAssemblyReference.cache
 F:\Development\Git\SavingSystem\SavingSystem.MsSQLRepositoryTests\obj\Debug\SavingSystem.MsSQLRepositoryTests.dll
 F:\Development\Git\SavingSystem\SavingSystem.MsSQLRepositoryTests\obj\Debug\SavingSystem.MsSQLRepositoryTests.pdb

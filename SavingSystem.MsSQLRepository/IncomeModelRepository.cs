@@ -88,7 +88,7 @@ namespace SavingSystem.MsSQLRepository
         /// <param name="incomeId">Income id.</param>
         /// <param name="income">Updated income obj.</param>
         /// <returns>true if succesful updated, false if fail.</returns>
-        public override bool Update(int profileId, int incomeId, IncomeModel income)
+        public bool Update(int profileId, int incomeId, IncomeModel income)
         {
             return true;
         }
@@ -100,7 +100,7 @@ namespace SavingSystem.MsSQLRepository
         /// <param name="profileId">Profile id.</param>
         /// <param name="incomeId">Income id.</param>
         /// <returns>true if succesful deleted, false if fail.</returns>
-        public override bool Delete(int profileId, int incomeId)
+        public bool Delete(int profileId, int incomeId)
         {
             return true;
         }

@@ -8,17 +8,17 @@ namespace SavingSystem.Comon
     public class Income
     {
         public int Id { get; set; }
-        [ColumnName("ProfileId", "ProfileId")]
+        [ColumnName("ProfileId")]
         public int ProfileId { get; set; }
-        [ColumnName("Summ", "Summ")]
+        [ColumnName("Summ")]
         public decimal Summ { get; set; }
-        [ColumnName("IncomeCategoryId", "IncomeCategoryId")]
-        public int ? IncomeCategoryId { get; set; }
-        [ColumnName("DateCreation", "DateCreation")]
+        [ColumnName("IncomeCategoryId")]
+        public int? IncomeCategoryId { get; set; }
+        [ColumnName("DateCreation")]
         public DateTime DateCreation { get; set; }
-        [ColumnName("Comment", "Comment")]
+        [ColumnName("Comment")]
         public string Comment { get; set; }
-
+        
         public Profile Profile { get; set; }
         public IncomeCategory IncomeCategory { get; set; }
     }

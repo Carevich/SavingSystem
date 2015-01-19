@@ -71,7 +71,7 @@ namespace SavingSystem.MsSQLRepository
             }
             return items;
         }
-        
+
 
         public T Get(int profileId, int fieldId)
         {
@@ -104,22 +104,23 @@ namespace SavingSystem.MsSQLRepository
             var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));
             if (tableName == null) { throw new NullReferenceException("Table name attribute of type cannot be empty or null."); }
             List<string> columnsStrings = GetColumnsStringsOnAttributesProperties(properties);
+            var columnAttribures = GetAttributesInProperties(properties);
 
             using (var connection = new SqlConnection(_cnStr))
             {
                 var query = QueryManager.GenerateInsertQuery(tableName.Name, columnsStrings);
                 var command = new SqlCommand(query, connection);
 
-                foreach (var column in columnsStrings)
+                foreach (var column in columnAttribures)
                 {
-                    var propValue = type.GetType().GetProperty(column).GetValue(type);
+                    var propValue = type.GetType().GetProperty(column.PropertyName).GetValue(type);
                     if (propValue != null)
                     {
-                        command.Parameters.AddWithValue("@" + column, propValue);
+                        command.Parameters.AddWithValue("@" + column.ColumnName, propValue);
                     }
                     else
                     {
-                        command.Parameters.AddWithValue("@" + column, DBNull.Value);
+                        command.Parameters.AddWithValue("@" + column.ColumnName, DBNull.Value);
                     }
                 }
                 connection.Open();
@@ -130,9 +131,56 @@ namespace SavingSystem.MsSQLRepository
         }
 
 
-        public abstract bool Update(int profileId, int itemId, T item);
-        public abstract bool Delete(int profileId, int itemId);
-        
+        public bool Update(int fieldId, T type)
+        {
+            IList<PropertyInfo> properties = type.GetType().GetProperties();
+            var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));
+            if (tableName == null) { throw new NullReferenceException("Table name attribute of type cannot be empty or null."); }
+            List<string> columnsStrings = GetColumnsStringsOnAttributesProperties(properties);
+            var columnAttribures = GetAttributesInProperties(properties);
+
+            using (var connection = new SqlConnection(_cnStr))
+            {
+                var query = QueryManager.GenerateUpdateQuery(tableName.Name, columnsStrings, fieldId);
+                var command = new SqlCommand(query, connection);
+
+                foreach (var column in columnAttribures)
+                {
+                    var propValue = type.GetType().GetProperty(column.PropertyName).GetValue(type);
+                    if (propValue != null)
+                    {
+                        command.Parameters.AddWithValue("@" + column.ColumnName, propValue);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@" + column.ColumnName, DBNull.Value);
+                    }
+                }
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            return true;
+        }
+
+
+        public bool Delete(int fieldId, T type)
+        {
+            var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));
+            if (tableName == null) { throw new NullReferenceException("Table name attribute of type cannot be empty or null."); }
+            
+            using (var connection = new SqlConnection(_cnStr))
+            {
+                var query = QueryManager.GenerateDeleteQuery(tableName.Name, fieldId);
+                var command = new SqlCommand(query, connection);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            return true;
+        }
+
 
         #region Help methods
         protected IList<T> ReadData<T>(SqlDataReader reader, IList<string> columns, IList<PropertyInfo> properties) where T : new()
@@ -175,28 +223,7 @@ namespace SavingSystem.MsSQLRepository
             return columns;
         }
 
-
-        protected void DeleteItemInTableById(string tableName, int id)
-        {
-            using (var connection = new SqlConnection(_cnStr))
-            {
-                string query = string.Format("Delete from {0} where Id = {1}", tableName, id);
-                var command = new SqlCommand(query, connection);
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-            }
-        }
-
-
-        protected void OpenExecCloseConn(SqlConnection connection, SqlCommand command)
-        {
-            connection.Open();
-            command.ExecuteNonQuery();
-            connection.Close();
-        }
-
-
+        
         protected List<string> GetColumnsStringsOnAttributesProperties(IEnumerable<PropertyInfo> properties)
         {
             var columnsNames = new List<string>();
@@ -224,6 +251,22 @@ namespace SavingSystem.MsSQLRepository
                 }
             }
             return propertiesOnAttr;
+        }
+
+
+        protected IList<ColumnNameAttribute> GetAttributesInProperties(IEnumerable<PropertyInfo> properties)
+        {
+            var attributes = new List<ColumnNameAttribute>();
+            foreach (var property in properties)
+            {
+                Attribute attribute = property.GetCustomAttribute(typeof(ColumnNameAttribute));
+                var columnNameAttribute = (ColumnNameAttribute)attribute;
+                if (attribute != null)
+                {
+                    attributes.Add(columnNameAttribute);
+                }
+            }
+            return attributes;
         }
         #endregion
     }

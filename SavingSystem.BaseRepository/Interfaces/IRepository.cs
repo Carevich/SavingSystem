@@ -15,33 +15,32 @@ namespace SavingSystem.BaseRepository.Interfaces
         /// Get one item by id.
         /// </summary>
         /// <param name="profileId">Profile id.</param>
-        /// <param name="itemId">Item id.</param>
+        /// <param name="fieldId">Field id.</param>
         /// <returns>One item</returns>
-        T Get(int profileId, int itemId);
+        T Get(int profileId, int fieldId);
 
         /// <summary>
         /// Add item in DB.
         /// </summary>
         /// <param name="profileId">Profile id.</param>
-        /// <param name="item">Item obj</param>
+        /// <param name="type">T type.</param>
         /// <returns>true if succesful added, false if fail.</returns>
-        bool Add(int profileId, T item);
+        bool Add(int profileId, T type);
 
         /// <summary>
         /// Update item by id.
         /// </summary>
-        /// <param name="profileId">Profile id.</param>
-        /// <param name="itemId">Item id.</param>
-        /// <param name="item">Updated item.</param>
+        /// <param name="fieldId">Field id.</param>
+        /// <param name="type">Updated T type obj.</param>
         /// <returns>true if succesful updated, false if fail.</returns>
-        bool Update(int profileId, int itemId, T item);
+        bool Update(int fieldId, T type);
 
         /// <summary>
         /// Delete item by id.
         /// </summary>
-        /// <param name="profileId">Profile id.</param>
-        /// <param name="itemId">Item id</param>
+        /// <param name="fieldId">Field id.</param>
+        /// <param name="type">T type.</param>
         /// <returns>true if succesful deleted, false if fail.</returns>
-        bool Delete(int profileId, int itemId);
+        bool Delete(int fieldId, T type);
     }
 }
