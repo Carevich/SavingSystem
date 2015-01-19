@@ -22,7 +22,7 @@ namespace SavingSystem.MsSQLRepository
             QueryManager = new QueryManager();
         }
 
-
+        
         public IEnumerable<T> GetAll()
         {
             IList<T> items;
@@ -163,7 +163,7 @@ namespace SavingSystem.MsSQLRepository
             return true;
         }
 
-
+        
         public bool Delete(int fieldId, T type)
         {
             var tableName = (TableNameAttribute)type.GetType().GetCustomAttribute(typeof(TableNameAttribute));

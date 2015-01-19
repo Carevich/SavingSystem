@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using SavingSystem.Models.Mapping_Model;
+using SavingSystem.Comon.Mapping_Model;
 
 namespace SavingSystem.BaseRepository.Interfaces
 {

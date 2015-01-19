@@ -1,35 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using SavingSystem.BaseRepository.Interfaces;
-using SavingSystem.Models.Mapping_Model;
+using SavingSystem.Comon.Mapping_Model;
 
 namespace SavingSystem.MsSQLRepository
 {
     public class IncomeModelRepository : BaseRepository<IncomeModel>, IIncomeModelRepository
     {
-        /// <summary>
-        /// Get incomes Profile.
-        /// </summary>
-        /// <param name="profileId">Profile id.</param>
-        /// <returns>List of incomes profile.</returns>
-        public IEnumerable<IncomeModel> GetAll(int profileId)
-        {
-            return null;
-        }
-
-
-        /// <summary>
-        /// Get income by id.
-        /// </summary>
-        /// <param name="profileId">Profile id.</param>
-        /// <param name="incomeId">Income id.</param>
-        /// <returns>One income.</returns>
-        public IncomeModel Get(int profileId, int incomeId)
-        {
-            return null;
-        }
-
-
         /// <summary>
         /// Get all incomes by date.
         /// </summary>
@@ -66,43 +43,6 @@ namespace SavingSystem.MsSQLRepository
         public IEnumerable<IncomeModel> GetByCategory(int profileId, int incomeCategoryId)
         {
             return null;
-        }
-        
-
-        /// <summary>
-        /// Add item in DB.
-        /// </summary>
-        /// <param name="profileId">Profile id.</param>
-        /// <param name="income">Income obj.</param>
-        /// <returns>true if succesful added, false if fail.</returns>
-        //public bool Add(int profileId, IncomeModel income)
-        //{
-        //    return true;
-        //}
-
-
-        /// <summary>
-        /// Update income by id.
-        /// </summary>
-        /// <param name="profileId">Profile id.</param>
-        /// <param name="incomeId">Income id.</param>
-        /// <param name="income">Updated income obj.</param>
-        /// <returns>true if succesful updated, false if fail.</returns>
-        public bool Update(int profileId, int incomeId, IncomeModel income)
-        {
-            return true;
-        }
-
-
-        /// <summary>
-        /// Delete item by id
-        /// </summary>
-        /// <param name="profileId">Profile id.</param>
-        /// <param name="incomeId">Income id.</param>
-        /// <returns>true if succesful deleted, false if fail.</returns>
-        public bool Delete(int profileId, int incomeId)
-        {
-            return true;
         }
     }
 }
